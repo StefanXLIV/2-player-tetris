@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <style>
+            body {
+                background: black;
+                display: flex;
+                color: #f6f3fa;
+                font:  sans-serif;
+                font-size: 3em;
+                text-align: center;
+            }
+
+                .player {
+                    flex: 1 1 auto;
+                }
+
+            canvas {
+                border: solid 0.1em #f6f3fa;
+                height: 70vh;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="player" style="background-image: url('stars.jpg'); background-repeat: no-repeat;background-size: cover; border: blanchedalmond 1px solid; border-radius: 15px; padding: 0.5cm; margin: 2px;">
+            <div class="score"></div>
+            <canvas class="tetris" width="240" height="400"></canvas>
+            <footer style="font-size: 0.7em;">Player1</footer>
+        </div>
+        <div class="player" style="background-image: url('sky.jpg'); background-repeat: no-repeat;background-size: cover; border: blanchedalmond 1px solid; border-radius: 15px; padding: 0.5cm; margin: 2px;">
+            <div class="score"></div>
+            <canvas class="tetris" width="240" height="400"></canvas>
+            <footer style="font-size: 0.7em;">Player2</footer>
+        </div>
+
+            <script src="arena.js"></script>   
+            <script src="player.js"></script>
+            <script src="tetris.js"></script> 
+            <script src="main.js"></script> 
+           
+    </body>
+</html>
